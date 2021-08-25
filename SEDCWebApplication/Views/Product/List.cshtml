@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Product>
+
+<h1>@ViewBag.Title</h1>
+
+<div class="container">
+    <button class="btn-danger"><a asp-controller="product" asp-action="create">Create New</a></button>
+    <div class="card-columns">
+        @foreach (var product in Model)
+        {
+
+            <div class="card card-user">
+                <img class="card-img-top" src=@product.ImagePath alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h3 class="card-title">@product.Name</h3>
+                    <h4 class="card-title">@product.Size</h4>
+                    <p class="card-text">@product.Description</p>
+                    <a asp-controller="product" asp-action="details" asp-route-id="@product.Id">See Product Details</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+

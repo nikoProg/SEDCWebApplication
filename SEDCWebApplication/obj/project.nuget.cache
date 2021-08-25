@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "++Eu1AxvLwGjRX7Bhelc7Y62L3VlDWSFTMKaSnVJvjluVlw8/bfvElFrR73rHLnif+wZX9Kt/JfQ5f7fwMu7jg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\name\\Downloads\\SEDC - Web Applications using ASP.NET Core MVC\\Class 5\\SEDCWebApplication\\SEDCWebApplication\\SEDCWebApplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\name\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
