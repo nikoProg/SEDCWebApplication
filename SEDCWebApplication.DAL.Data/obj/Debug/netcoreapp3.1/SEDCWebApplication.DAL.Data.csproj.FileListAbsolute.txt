@@ -1,0 +1,9 @@
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.Data\bin\Debug\netcoreapp3.1\SEDCWebApplication.DAL.Data.deps.json
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.Data\bin\Debug\netcoreapp3.1\SEDCWebApplication.DAL.Data.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.Data\bin\Debug\netcoreapp3.1\SEDCWebApplication.DAL.Data.pdb
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.Data\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.Data.csprojAssemblyReference.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.Data\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.Data.AssemblyInfoInputs.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.Data\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.Data.AssemblyInfo.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.Data\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.Data.csproj.CoreCompileInputs.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.Data\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.Data.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.Data\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.Data.pdb

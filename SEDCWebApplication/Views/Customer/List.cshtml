@@ -3,7 +3,7 @@
 <h1>@ViewBag.Title</h1>
 
 <div class="container">
-    <!--<a asp-controller="customer" asp-action="create">Create New</a>-->
+    <button class="btn-danger"><a asp-controller="customer" asp-action="create">Create New</a></button>
     <div class="card-columns">
         @foreach (var customer in Model)
         {
@@ -12,8 +12,8 @@
                 <img class="card-img-top" src="~/img/avatar.png" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h4 class="card-title">@customer.Name</h4>
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a asp-controller="employee" asp-action="details" asp-route-id="@customer.Id">See Profile</a>
+                    <p class="card-text">Customer Loyalty Points: 50</p>
+                    <a asp-controller="customer" asp-action="details" asp-route-id="@customer.Id">See Profile</a>
                 </div>
             </div>
         }

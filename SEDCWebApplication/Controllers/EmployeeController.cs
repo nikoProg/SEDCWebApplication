@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using SEDCWebApplication.BLL.Logic.Models;
 using SEDCWebApplication.Models;
 using SEDCWebApplication.Models.Repositories.Implementations;
 using SEDCWebApplication.Models.Repositories.Interfaces;
@@ -31,7 +32,7 @@ namespace SEDCWebApplication.Controllers
         public IActionResult List()
         {
 
-            List<Employee> employees = _employeeRepository.GetAllEmployees().ToList();
+            List<EmployeeDTO> employees = _employeeRepository.GetAllEmployees().ToList();
             ViewBag.Title = "Employees";
 
             return View(employees);
@@ -43,8 +44,8 @@ namespace SEDCWebApplication.Controllers
             //MockEmployeeRepository mockEmployeeRepository = new MockEmployeeRepository();
             //Employee employee =  mockEmployeeRepository.GetEmployeeById(id);
             //Employee employee = employees.Where(x => x.Id == id).FirstOrDefault();
-            
-            Employee employee = _employeeRepository.GetEmployeeById(id);
+
+            EmployeeDTO employee = _employeeRepository.GetEmployeeById(id);
 
             //EmployeeDetailsViewModel employeeVM = new EmployeeDetailsViewModel
             //{
@@ -57,6 +58,8 @@ namespace SEDCWebApplication.Controllers
             employeeVM.Test = employee.Test;
             //employeeVM.EmployeeCompany = employee.Company;
             employeeVM.PageTitle = "Employee's details";
+            //employeeVM.Email = employee.Email;
+            employeeVM.Role = employee.Role.ToString();
 
             return View(employeeVM);
         }
@@ -74,17 +77,66 @@ namespace SEDCWebApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Employee employee)
+        public IActionResult Create(EmployeeCreateViewModel model)
         {
+
+            EmployeeDTO employee = new EmployeeDTO
+            {
+                //Id = null,
+                Name = model.Name,
+                Email = model.Email,
+                Role = model.Role,
+                Gender = model.Gender,
+                DateOfBirth = model.DateOfBirth,
+                ImagePath = "~/img/"
+            };
+
             if (ModelState.IsValid)
             {
-                Employee newEmployee = _employeeRepository.Add(employee);
+                EmployeeDTO newEmployee = _employeeRepository.Add(employee);
                 return RedirectToAction("Details", new { id = newEmployee.Id });
             } else
             {
                 return View();
             }
             
+        }
+
+        [HttpGet]
+        [Route("Edit/{id}")]
+        public IActionResult Edit(int id)
+        {
+            EmployeeDTO employee = _employeeRepository.GetEmployeeById(id);
+
+            return View(employee);
+        }
+
+
+        [HttpPost]
+        [Route("Edit/{id}")]
+        public IActionResult Edit(int id, EmployeeDTO formEmployee)
+        {
+            //MockEmployeeRepository mockEmployeeRepository = new MockEmployeeRepository();
+            //EmployeeDTO employee = mockEmployeeRepository.GetEmployeeById(changedEmployee.Id);
+
+            if (ModelState.IsValid)
+            {
+                EmployeeDTO employee = _employeeRepository.GetEmployeeById(formEmployee.Id);
+
+                //moze mapper?
+                employee.Name = formEmployee.Name;
+                employee.Role = formEmployee.Role;
+                employee.Gender = formEmployee.Gender;
+                employee.DateOfBirth = formEmployee.DateOfBirth;
+                employee.Email = formEmployee.Email;
+
+                employee = _employeeRepository.Update(employee);
+                return RedirectToAction("Details", new { id = formEmployee.Id });
+            }
+            else
+            {
+                return View();
+            }
         }
     }
 }

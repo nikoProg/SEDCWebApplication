@@ -1,4 +1,6 @@
-﻿using SEDCWebApplication.Models.Repositories.Interfaces;
+﻿using SEDCWebApplication.BLL.Logic.Models;
+
+using SEDCWebApplication.Models.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,49 +10,57 @@ namespace SEDCWebApplication.Models.Repositories.Implementations
 {
     public class MockEmployeeRepository : IEmployeeRepository
     {
-        private List<Employee> _employeeList;
+        private List<EmployeeDTO> _employeeList;
         public MockEmployeeRepository()
         {
-            _employeeList = new List<Employee>
+            _employeeList = new List<EmployeeDTO>
             {
-                new Employee
+                new EmployeeDTO
                 {
                     Id=1,
                     Name="Pera",
-                    Role=RoleEnum.Manager,
-                    Test = true
+                    Role=BLL.Logic.Models.RoleEnum.Manager,
+                    Test = true,
+                    Email="test@sedcmail.com"
                 },
-                new Employee
+                new EmployeeDTO
                 {
                     Id=2,
                     Name="Mika",
                     Role=RoleEnum.Sales,
-                    Test = false
+                    Test = false,
+                    Email="test@sedcmail.com"
                 },
-                new Employee
+                new EmployeeDTO
                 {
                     Id=3,
                     Name="Laza",
-                    Role=RoleEnum.Operater
+                    Role=RoleEnum.Operater,
+                    Email="test@sedcmail.com"
                 }
             };
         }
 
-        public IEnumerable<Employee> GetAllEmployees()
+        public IEnumerable<EmployeeDTO> GetAllEmployees()
         {
             return _employeeList;
         }
 
-        public Employee GetEmployeeById(int id)
+        public EmployeeDTO GetEmployeeById(int id)
         {
             return _employeeList.Where(x => x.Id == id).FirstOrDefault();
         }
 
-        public Employee Add(Employee employee)
+        public EmployeeDTO Add(EmployeeDTO employee)
         {
             employee.Id = _employeeList.Max(e => e.Id) + 1;
             _employeeList.Add(employee);
             return _employeeList.Where(x => x.Id == employee.Id).FirstOrDefault();
+        }
+
+        public EmployeeDTO Update(EmployeeDTO employee)
+        {
+            throw new NotImplementedException();
         }
     }
 }

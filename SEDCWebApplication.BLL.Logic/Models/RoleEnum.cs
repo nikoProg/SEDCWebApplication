@@ -5,13 +5,13 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SEDCWebApplication.Models
+namespace SEDCWebApplication.BLL.Logic.Models
 {
     public enum RoleEnum
     {
         [Display(Name="Menadzer")]
-        Manager,
-        Sales,
-        Operater
+        Manager=1,
+        Sales=2,
+        Operater=3
     }
 }

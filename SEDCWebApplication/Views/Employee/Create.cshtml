@@ -1,4 +1,4 @@
-﻿@model Employee
+﻿@model EmployeeDTO
 
 @{
     ViewBag.Title = "Create Employee";
@@ -27,6 +27,28 @@
             <select asp-for="Role" placeholder="Role" class="form-control" asp-items="Html.GetEnumSelectList<RoleEnum>()">
             </select>
             <span asp-validation-for="Role"></span>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Gender" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <select asp-for="Gender" placeholder="Size" class="form-control">
+                <option value="" selected>Please choose</option>
+
+                <option value=null>would rather not say</option>
+                <option value="M">Male</option>
+                <option value="Z">Female</option>
+            </select>
+            <span asp-validation-for="Gender"></span>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="DateOfBirth" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input type="date" asp-for="DateOfBirth" class="form-control" />
+            <span asp-validation-for="DateOfBirth"></span>
         </div>
     </div>
 

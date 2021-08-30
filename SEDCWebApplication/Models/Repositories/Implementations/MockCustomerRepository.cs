@@ -43,5 +43,12 @@ namespace SEDCWebApplication.Models.Repositories.Implementations
         {
             return _customerList.Where(x => x.Id == id).FirstOrDefault();
         }
+
+        public Customer Add(Customer customer)
+        {
+            customer.Id = _customerList.Max(e => e.Id) + 1;
+            _customerList.Add(customer);
+            return _customerList.Where(x => x.Id == customer.Id).FirstOrDefault();
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Employee>
+﻿@model IEnumerable<EmployeeDTO>
 
 <h1>@ViewBag.Title</h1>
 
@@ -12,8 +12,12 @@
                 <img class="card-img-top" src="~/img/avatar.png" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h4 class="card-title">@employee.Name</h4>
+                    <p class="card-text">@employee.Role.ToString()</p>
+                    <p class="card-text">@employee.Gender</p>
+                    <p class="card-text">@employee.DateOfBirth</p>
                     <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
                     <a asp-controller="employee" asp-action="details" asp-route-id="@employee.Id">See Profile</a>
+                    <a asp-controller="employee" asp-action="edit" asp-route-id="@employee.Id">Edit Profile</a>
                 </div>
             </div>
         }

@@ -87,3 +87,122 @@ C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC-20210817T
 C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC-20210817T224102Z-001\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Product\Create.cshtml.g.cs
 C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC-20210817T224102Z-001\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Product\Details.cshtml.g.cs
 C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC-20210817T224102Z-001\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Product\List.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.exe
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.deps.json
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.runtimeconfig.json
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.runtimeconfig.dev.json
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.dll
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.pdb
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.Views.dll
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.Views.pdb
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.csprojAssemblyReference.cache
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.AssemblyInfoInputs.cache
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.AssemblyInfo.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.csproj.CoreCompileInputs.cache
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.RazorAssemblyInfo.cache
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.RazorAssemblyInfo.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\staticwebassets\SEDCWebApplication.StaticWebAssets.Manifest.cache
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\staticwebassets\SEDCWebApplication.StaticWebAssets.xml
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\scopedcss\bundle\SEDCWebApplication.styles.css
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.TagHelpers.input.cache
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.TagHelpers.output.cache
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.RazorCoreGenerate.cache
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Create.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Details.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Customer\List.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Create.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Details.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Employee\List.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\_ViewStart.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Product\Create.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Product\Details.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Product\List.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.RazorTargetAssemblyInfo.cache
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.RazorTargetAssemblyInfo.cs
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.Views.pdb
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.dll
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.pdb
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.genruntimeconfig.cache
+C:\Users\name\Downloads\SEDC - Web Applications using ASP.NET Core MVC\Class 5\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.csproj.CopyComplete
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.csprojAssemblyReference.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.AssemblyInfoInputs.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.AssemblyInfo.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.csproj.CoreCompileInputs.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.RazorAssemblyInfo.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.RazorAssemblyInfo.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\staticwebassets\SEDCWebApplication.StaticWebAssets.Manifest.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\staticwebassets\SEDCWebApplication.StaticWebAssets.xml
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\scopedcss\bundle\SEDCWebApplication.styles.css
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.TagHelpers.input.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.TagHelpers.output.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.RazorCoreGenerate.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Create.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Details.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Customer\List.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Create.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Details.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Employee\List.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\_ViewStart.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Product\Create.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Product\Details.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Product\List.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.RazorTargetAssemblyInfo.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.RazorTargetAssemblyInfo.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.pdb
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.exe
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.deps.json
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.runtimeconfig.json
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.runtimeconfig.dev.json
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.pdb
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.Views.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.Views.pdb
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.BLL.Logic.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.DAL.Data.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.BLL.Logic.pdb
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\SEDCWebApplication.DAL.Data.pdb
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.Views.pdb
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.csproj.CopyComplete
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\SEDCWebApplication.genruntimeconfig.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\bin\Debug\netcoreapp3.1\appSettings.Production.json
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Edit.cshtml.g.cs

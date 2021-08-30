@@ -69,3 +69,11 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+
+main {
+    background-color: beige;
+}
+.pb-3 {
+    background-color: beige;
+}

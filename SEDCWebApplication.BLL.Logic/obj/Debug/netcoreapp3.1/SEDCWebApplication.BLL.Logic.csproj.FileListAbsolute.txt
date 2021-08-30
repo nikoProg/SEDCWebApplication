@@ -1,0 +1,12 @@
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.BLL.Logic\bin\Debug\netcoreapp3.1\SEDCWebApplication.BLL.Logic.deps.json
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.BLL.Logic\bin\Debug\netcoreapp3.1\SEDCWebApplication.BLL.Logic.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.BLL.Logic\bin\Debug\netcoreapp3.1\SEDCWebApplication.BLL.Logic.pdb
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.BLL.Logic\bin\Debug\netcoreapp3.1\SEDCWebApplication.DAL.Data.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.BLL.Logic\bin\Debug\netcoreapp3.1\SEDCWebApplication.DAL.Data.pdb
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.BLL.Logic\obj\Debug\netcoreapp3.1\SEDCWebApplication.BLL.Logic.csprojAssemblyReference.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.BLL.Logic\obj\Debug\netcoreapp3.1\SEDCWebApplication.BLL.Logic.AssemblyInfoInputs.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.BLL.Logic\obj\Debug\netcoreapp3.1\SEDCWebApplication.BLL.Logic.AssemblyInfo.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.BLL.Logic\obj\Debug\netcoreapp3.1\SEDCWebApplication.BLL.Logic.csproj.CoreCompileInputs.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.BLL.Logic\obj\Debug\netcoreapp3.1\SEDCWebApplication.BLL.Logic.csproj.CopyComplete
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.BLL.Logic\obj\Debug\netcoreapp3.1\SEDCWebApplication.BLL.Logic.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.BLL.Logic\obj\Debug\netcoreapp3.1\SEDCWebApplication.BLL.Logic.pdb

@@ -13,14 +13,20 @@ namespace SEDCWebApplication.Controllers
     public class CustomerController : Controller
     {
         private ICustomerRepository _customerRepository;
+
+        public CustomerController(ICustomerRepository customerRepository)
+        {
+            _customerRepository = customerRepository;
+        }
+
         public IActionResult List()
         {
-            MockCustomerRepository mockCustomerRepository = new MockCustomerRepository();
-            List<Customer> customers = mockCustomerRepository.GetAllCustomers().ToList();
+            //MockCustomerRepository mockCustomerRepository = new MockCustomerRepository();
+            List<Customer> customers = _customerRepository.GetAllCustomers().ToList();
 
-            ViewBag.Customers = customers;
+            //ViewBag.Customers = customers;
             //ViewData["Customers"] = customers;
-            ViewBag.Title = "customers runtime";
+            ViewBag.Title = "Customers";
             //ViewData["Title"] = "Customers";
 
 
@@ -30,8 +36,8 @@ namespace SEDCWebApplication.Controllers
         [Route("Customer/Details/{id}")]
         public IActionResult Details(int id)
         {
-            MockCustomerRepository mockCustomerRepository = new MockCustomerRepository();
-            Customer customer = mockCustomerRepository.GetCustomerById(id);
+            //MockCustomerRepository mockCustomerRepository = new MockCustomerRepository();
+            Customer customer = _customerRepository.GetCustomerById(id);
 
             CustomerDetailsViewModel customerVM = new CustomerDetailsViewModel
             {
@@ -40,6 +46,27 @@ namespace SEDCWebApplication.Controllers
             };
 
             return View(customerVM);
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Customer customer)
+        {
+            if (ModelState.IsValid)
+            {
+                Customer newCustomer = _customerRepository.Add(customer);
+                return RedirectToAction("Details", new { id = newCustomer.Id });
+            }
+            else
+            {
+                return View();
+            }
+
         }
     }
 }

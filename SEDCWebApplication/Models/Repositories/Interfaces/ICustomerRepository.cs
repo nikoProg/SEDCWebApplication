@@ -9,5 +9,7 @@ namespace SEDCWebApplication.Models.Repositories.Interfaces
     {
         IEnumerable<Customer> GetAllCustomers();
         Customer GetCustomerById(int id);
+
+        Customer Add(Customer customer);
     }
 }

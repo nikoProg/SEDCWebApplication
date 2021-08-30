@@ -4,10 +4,16 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using SEDCWebApplication.BLL.Logic.Implementations;
+using SEDCWebApplication.BLL.Logic.Interfaces;
+using SEDCWebApplication.DAL.Data.Implementations;
+using SEDCWebApplication.DAL.Data.Interfaces;
 using SEDCWebApplication.Models.Repositories.Implementations;
 using SEDCWebApplication.Models.Repositories.Interfaces;
 
@@ -27,11 +33,24 @@ namespace SEDCWebApplication
         {
             services.AddControllersWithViews();
 
-            services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
+            services.AddAutoMapper(typeof(EmployeeManager));
 
-            //nema ga customer
+            services.AddScoped<IEmployeeRepository, DatabaseEmployeeRepository>();
 
-            services.AddSingleton<IProductRepository, MockProductRepository>();
+            //BLL
+            services.AddScoped<IEmployeeManager, EmployeeManager>();
+
+            //DAL
+            services.AddScoped<IEmployeeDAL, EmployeeDAL>();
+
+
+
+            //Mock
+            //services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
+
+            //services.AddSingleton<ICustomerRepository, MockCustomerRepository>();
+
+            //services.AddSingleton<IProductRepository, MockProductRepository>();
 
         }
 

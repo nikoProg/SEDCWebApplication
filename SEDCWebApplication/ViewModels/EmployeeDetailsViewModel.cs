@@ -14,5 +14,15 @@ namespace SEDCWebApplication.ViewModels
         public string PageTitle { get; set; }
 
         public bool Test { get; set; }
+
+        public string Email { get; set; }
+
+        public string Role { get; set; }
+
+        public string Gender { get; set; }
+
+        //public int RoleId { get; set; }
+
+        public DateTime DateOfBirth { get; set; }
     }
 }
