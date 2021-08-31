@@ -14,6 +14,6 @@ namespace SEDCWebApplication.DAL.Data.Interfaces
         List<Employee> GetAll(int skip, int take);
 
 
-        void Update(Employee item);
+        //void Update(Employee item);
     }
 }

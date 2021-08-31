@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using SEDCWebApplication.BLL.Logic.Models;
@@ -16,6 +18,7 @@ namespace SEDCWebApplication.Controllers
     public class EmployeeController : Controller
     {
         private readonly IEmployeeRepository _employeeRepository;
+        private readonly IWebHostEnvironment _hostingEnvironment;
 
         //private List<Employee> employees;
 
@@ -79,20 +82,29 @@ namespace SEDCWebApplication.Controllers
         [HttpPost]
         public IActionResult Create(EmployeeCreateViewModel model)
         {
-
-            EmployeeDTO employee = new EmployeeDTO
-            {
-                //Id = null,
-                Name = model.Name,
-                Email = model.Email,
-                Role = model.Role,
-                Gender = model.Gender,
-                DateOfBirth = model.DateOfBirth,
-                ImagePath = "~/img/"
-            };
-
             if (ModelState.IsValid)
             {
+                string uniqueFileName = "avatar.png";
+                if (model.Photo != null)
+                {
+                    string uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "img");
+
+                    uniqueFileName = Guid.NewGuid().ToString() + "_" + model.Photo.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    model.Photo.CopyTo(new FileStream(filePath, FileMode.Create));
+                }
+
+                EmployeeDTO employee = new EmployeeDTO
+                {
+                    Id = null,
+                    Name = model.Name,
+                    Email = model.Email,
+                    Role = model.Role,
+                    Gender = model.Gender,
+                    DateOfBirth = model.DateOfBirth,
+                    ImagePath = "~/img/" + uniqueFileName
+                };
+            
                 EmployeeDTO newEmployee = _employeeRepository.Add(employee);
                 return RedirectToAction("Details", new { id = newEmployee.Id });
             } else
@@ -121,7 +133,7 @@ namespace SEDCWebApplication.Controllers
 
             if (ModelState.IsValid)
             {
-                EmployeeDTO employee = _employeeRepository.GetEmployeeById(formEmployee.Id);
+                EmployeeDTO employee = _employeeRepository.GetEmployeeById((int)formEmployee.Id);
 
                 //moze mapper?
                 employee.Name = formEmployee.Name;

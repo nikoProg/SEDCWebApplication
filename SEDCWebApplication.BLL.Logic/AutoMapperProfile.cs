@@ -10,11 +10,13 @@ namespace SEDCWebApplication.BLL.Logic
 
         public AutoMapperProfile()
         {
-            CreateMap<Employee, EmployeeDTO>();
+            CreateMap<Employee, EmployeeDTO>()
+                .ForMember(dest => dest.Role, src => src.MapFrom(src => src.RoleId));
 
             CreateMap<EmployeeDTO, Employee>()
                 .ForMember(dest => dest.UserName, src => src.MapFrom(src => src.Email))
-                    .ForMember(dest => dest.RoleId, src => src.MapFrom(src => src.Role));   
+                    .ForMember(dest => dest.RoleId, src => src.MapFrom(src => src.Role));
+            
 
         }
     }

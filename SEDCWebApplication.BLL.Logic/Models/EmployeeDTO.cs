@@ -8,7 +8,7 @@ namespace SEDCWebApplication.BLL.Logic.Models
 {
     public class EmployeeDTO
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
 
         [Required(ErrorMessage = "Ime je obavezno")]
         public string Name { get; set; }

@@ -104,7 +104,7 @@ namespace SEDCWebApplication.DAL.Data.Implementations
             }
         }
 
-        public void Update(Employee item) //promenio sam iz private u public!
+        private void Update(Employee item) //promenio sam iz private u public!
         {
             SqlConnection cn = ConnectionGet();
 

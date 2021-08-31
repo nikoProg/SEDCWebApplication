@@ -9,7 +9,7 @@
         {
 
             <div class="card card-user">
-                <img class="card-img-top" src="~/img/avatar.png" alt="Card image" style="width:100%">
+                <img asp-append-version="true" class="card-img-top" src="@employee.ImagePath" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h4 class="card-title">@employee.Name</h4>
                     <p class="card-text">@employee.Role.ToString()</p>
