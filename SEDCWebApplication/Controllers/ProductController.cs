@@ -9,34 +9,39 @@ using SEDCWebApplication.Models.Repositories.Implementations;
 using SEDCWebApplication.Models.Repositories.Interfaces;
 using SEDCWebApplication.ViewModels;
 
+using SEDCWebApplication.BLL.Logic.Models;
+using Microsoft.AspNetCore.Hosting;
+
 namespace SEDCWebApplication.Controllers
 {
     [Route("Product")]
     public class ProductController : Controller
     {
         private readonly IProductRepository _productRepository;
+        private readonly IWebHostEnvironment _hostingEnvironment;
 
-        public ProductController(IProductRepository productRepository)
+        public ProductController(IProductRepository productRepository, IWebHostEnvironment hostingEnvironment)
         {
             _productRepository = productRepository;
-
+            _hostingEnvironment = hostingEnvironment;
         }
+
 
 
         [Route("List")]
         public IActionResult List()
         {
 
-            List<Product> products = _productRepository.GetAllProducts().ToList();
+            List<ProductDTO> products = _productRepository.GetAllProducts().ToList();
             ViewBag.Title = "Products";
 
             return View(products);
         }
 
-        [Route("DetailsView/{id}")]
+        [Route("Details/{id}")]
         public IActionResult Details(int id)
         {
-            Product product = _productRepository.GetProductById(id);
+            ProductDTO product = _productRepository.GetProductById(id);
 
             ProductDetailsViewModel productVM = new ProductDetailsViewModel
             {
@@ -68,11 +73,11 @@ namespace SEDCWebApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Product product)
+        public IActionResult Create(ProductDTO product)
         {
             if (ModelState.IsValid)
             {
-                Product newProduct = _productRepository.Add(product);
+                ProductDTO newProduct = _productRepository.Add(product);
                 newProduct.ImagePath = "/img/defaultpizza.jpg";
                 return RedirectToAction("Details", new { id = newProduct.Id });
             }

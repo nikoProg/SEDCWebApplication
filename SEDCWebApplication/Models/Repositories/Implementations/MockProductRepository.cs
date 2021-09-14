@@ -4,16 +4,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+using SEDCWebApplication.BLL.Logic.Models;
+
 namespace SEDCWebApplication.Models.Repositories.Implementations
 {
     public class MockProductRepository : IProductRepository
     {
-        private List<Product> _productList;
+        private List<ProductDTO> _productList;
         public MockProductRepository()
         {
-            _productList = new List<Product>
+            _productList = new List<ProductDTO>
             {
-                new Product
+                new ProductDTO
                 {
                     Id=1,
                     Name="Margherita",
@@ -25,7 +27,7 @@ namespace SEDCWebApplication.Models.Repositories.Implementations
                     Description = "(sir, kečap, šampinjoni, masline)",
                     ImagePath = "/img/1200px-Eataly_Las_Vegas_-_Feb_2019_-_Stierch_12.jpg"
                 },
-                new Product
+                new ProductDTO
                 {
                     Id=2,
                     Name="Vegetariana",
@@ -38,7 +40,7 @@ namespace SEDCWebApplication.Models.Repositories.Implementations
                     ImagePath = "/img/Pizza-Vegetariana-3-1024x683.jpg"
 
                 },
-                new Product
+                new ProductDTO
                 {
                     Id=3,
                     Name="Capricciosa",
@@ -50,7 +52,7 @@ namespace SEDCWebApplication.Models.Repositories.Implementations
                     Description = "(sir, kečap, šunka, šampinjoni)",
                     ImagePath = "/img/1280px-Pizza_capricciosa.jpg"
                 },
-                new Product
+                new ProductDTO
                 {
                     Id=4,
                     Name="Specijal",
@@ -62,7 +64,7 @@ namespace SEDCWebApplication.Models.Repositories.Implementations
                     Description = "(sir, kečap, šunka, šampinjoni)",
                     ImagePath = "/img/1280px-Pizza_capricciosa.jpg"
                 },
-                new Product
+                new ProductDTO
                 {
                     Id=5,
                     Name="Rukola",
@@ -74,7 +76,7 @@ namespace SEDCWebApplication.Models.Repositories.Implementations
                     Description = "(sir, kečap, šunka, šampinjoni)",
                     ImagePath = "/img/2841-Rucola-Tomaat-Pizza_2566.jpg"
                 },
-                new Product
+                new ProductDTO
                 {
                     Id=6,
                     Name="Srpska",
@@ -86,7 +88,7 @@ namespace SEDCWebApplication.Models.Repositories.Implementations
                     Description = "(sir, kečap, šunka, šampinjoni)",
                     ImagePath = "/img/srpska-pica.jpg"
                 },
-                new Product
+                new ProductDTO
                 {
                     Id=7,
                     Name="Delikates",
@@ -102,21 +104,26 @@ namespace SEDCWebApplication.Models.Repositories.Implementations
             };
         }
 
-        public IEnumerable<Product> GetAllProducts()
+        public IEnumerable<ProductDTO> GetAllProducts()
         {
             return _productList;
         }
 
-        public Product GetProductById(int id)
+        public ProductDTO GetProductById(int id)
         {
             return _productList.Where(x => x.Id == id).FirstOrDefault();
         }
 
-        public Product Add(Product product)
+        public ProductDTO Add(ProductDTO product)
         {
             product.Id = _productList.Max(e => e.Id) + 1;
             _productList.Add(product);
             return _productList.Where(x => x.Id == product.Id).FirstOrDefault();
+        }
+
+        public ProductDTO Update(ProductDTO product)
+        {
+            throw new NotImplementedException();
         }
     }
 }

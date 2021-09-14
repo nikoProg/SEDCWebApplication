@@ -5,11 +5,14 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+
+  color: lightgray!important;
 }
 
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+  /*color: #0366d6;*/
+  color: #e5e5e5!important;
 }
 
 .btn-primary {
@@ -19,8 +22,10 @@ a {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
+  color: rgba(0, 0, 0, .05);
+  /*background-color: #1b6ec2;*/
+  background-color: black;
+  color: antiquewhite!important;
   border-color: #1861ac;
 }
 
@@ -61,6 +66,9 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+
+  background-color: black;
+  color: ghostwhite;    
 }
 .footer {
   position: absolute;
@@ -71,9 +79,14 @@ body {
 }
 
 
-main {
+/*main {
     background-color: beige;
-}
+}*/
 .pb-3 {
-    background-color: beige;
+    background-color: black;
+    color: antiquewhite;
+}
+font-face{
+    font-palette: light;
+    font-family: 'Comic Sans MS';
 }

@@ -22,12 +22,13 @@ namespace SEDCWebApplication.Controllers
 
         //private List<Employee> employees;
 
-        public EmployeeController(IEmployeeRepository employeeRepository)
+        public EmployeeController(IEmployeeRepository employeeRepository, IWebHostEnvironment hostingEnvironment)
         {
             _employeeRepository = employeeRepository;
+            _hostingEnvironment = hostingEnvironment;
             //MockEmployeeRepository mockEmployeeRepository = new MockEmployeeRepository();
             //employees = mockEmployeeRepository.GetAllEmployees().ToList();
-            
+
         }
 
 
@@ -61,8 +62,9 @@ namespace SEDCWebApplication.Controllers
             employeeVM.Test = employee.Test;
             //employeeVM.EmployeeCompany = employee.Company;
             employeeVM.PageTitle = "Employee's details";
-            //employeeVM.Email = employee.Email;
+            employeeVM.Email = employee.Email;
             employeeVM.Role = employee.Role.ToString();
+            employeeVM.ImagePath = employee.ImagePath;
 
             return View(employeeVM);
         }
@@ -102,7 +104,7 @@ namespace SEDCWebApplication.Controllers
                     Role = model.Role,
                     Gender = model.Gender,
                     DateOfBirth = model.DateOfBirth,
-                    ImagePath = "~/img/" + uniqueFileName
+                    ImagePath = "/img/" + uniqueFileName
                 };
             
                 EmployeeDTO newEmployee = _employeeRepository.Add(employee);
@@ -120,20 +122,41 @@ namespace SEDCWebApplication.Controllers
         {
             EmployeeDTO employee = _employeeRepository.GetEmployeeById(id);
 
-            return View(employee);
+            //STVARNO ne znam da li je suvisno pretvarati DTO u CreateModel za Editovanje.
+            EmployeeCreateViewModel formEmployee = new EmployeeCreateViewModel
+            {
+                Name = employee.Name,
+                Role = employee.Role,
+                Gender = employee.Gender,
+                DateOfBirth = employee.DateOfBirth,
+                Email = employee.Email,
+                ImagePath = employee.ImagePath
+            };
+
+            return View(formEmployee);
         }
 
 
         [HttpPost]
         [Route("Edit/{id}")]
-        public IActionResult Edit(int id, EmployeeDTO formEmployee)
+        public IActionResult Edit(int id, EmployeeCreateViewModel formEmployee)
         {
             //MockEmployeeRepository mockEmployeeRepository = new MockEmployeeRepository();
             //EmployeeDTO employee = mockEmployeeRepository.GetEmployeeById(changedEmployee.Id);
 
             if (ModelState.IsValid)
             {
-                EmployeeDTO employee = _employeeRepository.GetEmployeeById((int)formEmployee.Id);
+                string uniqueFileName = "avatar.png";
+                if (formEmployee.Photo != null)
+                {
+                    string uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "img");
+
+                    uniqueFileName = Guid.NewGuid().ToString() + "_" + formEmployee.Photo.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    formEmployee.Photo.CopyTo(new FileStream(filePath, FileMode.Create));
+                }
+
+                EmployeeDTO employee = _employeeRepository.GetEmployeeById(id);
 
                 //moze mapper?
                 employee.Name = formEmployee.Name;
@@ -141,9 +164,10 @@ namespace SEDCWebApplication.Controllers
                 employee.Gender = formEmployee.Gender;
                 employee.DateOfBirth = formEmployee.DateOfBirth;
                 employee.Email = formEmployee.Email;
+                employee.ImagePath = "/img/" + uniqueFileName;
 
-                employee = _employeeRepository.Update(employee);
-                return RedirectToAction("Details", new { id = formEmployee.Id });
+                employee = _employeeRepository.Update(employee);//nisam znao gde da vratim objekat, mozda to kvari nesto???
+                return RedirectToAction("Details", new { id });
             }
             else
             {

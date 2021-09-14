@@ -8,6 +8,7 @@ namespace SEDCWebApplication.DAL.Data
     {
         public const string EMP = "emp";
         public const string PROD = "prod";
+        public const string CUST = "cust";
 
     }
 }

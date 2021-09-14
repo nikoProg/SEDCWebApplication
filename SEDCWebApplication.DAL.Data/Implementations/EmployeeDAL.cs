@@ -215,7 +215,9 @@ namespace SEDCWebApplication.DAL.Data.Implementations
             this.ParamStringNonNullableValueSet(cmd, item.Name, "@EmployeeName", SqlDbType.NVarChar, 50);
             this.ParamStringNullableValueSet(cmd, item.Gender, "@Gender", SqlDbType.NVarChar, 50);
             this.ParamValueTypeNonNullableValueSet(cmd, item.RoleId, "@RoleId", SqlDbType.Int);
-            this.ParamValueTypeNonNullableValueSet(cmd, item.DateOfBirth, "@DateOfBirth", SqlDbType.Date);
+            //this.ParamValueTypeNonNullableValueSet(cmd, item.DateOfBirth, "@DateOfBirth", SqlDbType.Date);
+            this.ParamNullableValueTypeNullableValueSet<DateTime>(cmd, item.DateOfBirth, "@DateOfBirth", SqlDbType.Date);
+            this.ParamStringNullableValueSet(cmd, item.ImagePath, "@ImagePath", SqlDbType.NVarChar, 255);
         }
 
         private Employee Create(IDataReader reader)
@@ -225,7 +227,10 @@ namespace SEDCWebApplication.DAL.Data.Implementations
             item.Name = ReaderColumnReadObject<string>(reader, "EmployeeName", COLUMN_PREFIX);
             item.Gender = ReaderColumnReadObject<string>(reader, "Gender", COLUMN_PREFIX);
             item.RoleId = ReaderColumnReadValueType<int>(reader, "RoleId", COLUMN_PREFIX);
-            item.DateOfBirth = ReaderColumnReadValueType<DateTime>(reader, "DateOfBirth", COLUMN_PREFIX);
+            item.DateOfBirth = ReaderColumnReadNullableValueType<DateTime>(reader, "DateOfBirth", COLUMN_PREFIX);
+            item.ImagePath = ReaderColumnReadObject<string>(reader, "ImagePath", COLUMN_PREFIX);
+            item.UserName = ReaderColumnReadObject<string>(reader, "UserName", COLUMN_PREFIX);
+            //item.Password = ReaderColumnReadObject<string>(reader, "Password", COLUMN_PREFIX);
 
             return item;
         }

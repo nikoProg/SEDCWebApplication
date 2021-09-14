@@ -16,6 +16,6 @@ namespace SEDCWebApplication.DAL.Data.Entities
 
         public int RoleId { get; set; }
 
-        public DateTime DateOfBirth { get; set; }
+        public DateTime? DateOfBirth { get; set; }
     }
 }

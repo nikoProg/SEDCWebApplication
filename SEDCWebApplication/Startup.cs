@@ -34,14 +34,22 @@ namespace SEDCWebApplication
             services.AddControllersWithViews();
 
             services.AddAutoMapper(typeof(EmployeeManager));
+            services.AddAutoMapper(typeof(CustomerManager));
+            services.AddAutoMapper(typeof(ProductManager));
 
             services.AddScoped<IEmployeeRepository, DatabaseEmployeeRepository>();
+            services.AddScoped<ICustomerRepository, DatabaseCustomerRepository>();
+            services.AddScoped<IProductRepository, DatabaseProductRepository>();
 
             //BLL
             services.AddScoped<IEmployeeManager, EmployeeManager>();
+            services.AddScoped<ICustomerManager, CustomerManager>();
+            services.AddScoped<IProductManager, ProductManager>();
 
             //DAL
             services.AddScoped<IEmployeeDAL, EmployeeDAL>();
+            services.AddScoped<ICustomerDAL, CustomerDAL>();
+            services.AddScoped<IProductDAL, ProductDAL>();
 
 
 

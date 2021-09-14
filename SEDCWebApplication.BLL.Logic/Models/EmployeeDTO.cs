@@ -29,7 +29,7 @@ namespace SEDCWebApplication.BLL.Logic.Models
 
         //public int RoleId { get; set; }
 
-        public DateTime DateOfBirth { get; set; }
+        public DateTime? DateOfBirth { get; set; }
 
     }
 }

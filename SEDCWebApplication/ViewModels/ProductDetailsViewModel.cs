@@ -8,10 +8,10 @@ namespace SEDCWebApplication.ViewModels
     public class ProductDetailsViewModel
     {
         public string Name { get; set; }
-        public float UnitPrice { get; set; }
-        public bool IsDiscounted { get; set; }
-        public bool IsActive { get; set; }
-        public bool IsDeleted { get; set; }
+        public float? UnitPrice { get; set; }
+        public bool? IsDiscounted { get; set; }
+        public bool? IsActive { get; set; }
+        public bool? IsDeleted { get; set; }
 
         //public enum Size { get; set; }
         public string Size { get; set; }

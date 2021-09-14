@@ -19,8 +19,10 @@ namespace SEDCWebApplication.ViewModels
 
         public IFormFile Photo { get; set; }
 
+        public string ImagePath { get; set; }//mozda potrebno za edit, da bi prikazao proslu sliku ili njen path 
+
         public string Gender { get; set; }
 
-        public DateTime DateOfBirth { get; set; }
+        public DateTime? DateOfBirth { get; set; }
     }
 }

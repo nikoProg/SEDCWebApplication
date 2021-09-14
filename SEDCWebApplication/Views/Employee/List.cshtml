@@ -4,11 +4,11 @@
 
 <div class="container">
     <button class="btn-danger"><a asp-controller="employee" asp-action="create">Create New</a></button>
-    <div class="card-columns">
+    <div class="card-columns text-white">
         @foreach (var employee in Model)
         {
 
-            <div class="card card-user">
+            <div class="card card-user bg-dark">
                 <img asp-append-version="true" class="card-img-top" src="@employee.ImagePath" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h4 class="card-title">@employee.Name</h4>

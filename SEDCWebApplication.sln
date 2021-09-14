@@ -9,9 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{7BE5029B-C08
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{E8A57FF0-8E05-4556-B55D-7237A59D12AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDCWebApplication.BLL.Logic", "SEDCWebApplication.BLL.Logic\SEDCWebApplication.BLL.Logic.csproj", "{6A50C563-DBCD-47E3-B6CF-0F32CFD29DAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDCWebApplication.BLL.Logic", "SEDCWebApplication.BLL.Logic\SEDCWebApplication.BLL.Logic.csproj", "{6A50C563-DBCD-47E3-B6CF-0F32CFD29DAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDCWebApplication.DAL.Data", "SEDCWebApplication.DAL.Data\SEDCWebApplication.DAL.Data.csproj", "{4A876FF8-1D57-4C4C-B7B5-1C494800ED1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDCWebApplication.DAL.Data", "SEDCWebApplication.DAL.Data\SEDCWebApplication.DAL.Data.csproj", "{4A876FF8-1D57-4C4C-B7B5-1C494800ED1F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDCWebAPI", "SEDCWebAPI\SEDCWebAPI.csproj", "{3CD4B235-5DCB-4350-BC4F-A7B4BF2FD31B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDCWebApplication.DAL.EntityFactory", "SEDCWebApplication.DAL.EntityFactory\SEDCWebApplication.DAL.EntityFactory.csproj", "{C143358F-3615-4D8C-A4E2-F46CA97B8DBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDCWebApplication.DAL.DatabaseFactory", "SEDCWebApplication.DAL.DatabaseFactory\SEDCWebApplication.DAL.DatabaseFactory.csproj", "{8C901971-620F-4B0F-B581-47902DE95E0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +37,18 @@ Global
 		{4A876FF8-1D57-4C4C-B7B5-1C494800ED1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A876FF8-1D57-4C4C-B7B5-1C494800ED1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A876FF8-1D57-4C4C-B7B5-1C494800ED1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CD4B235-5DCB-4350-BC4F-A7B4BF2FD31B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CD4B235-5DCB-4350-BC4F-A7B4BF2FD31B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CD4B235-5DCB-4350-BC4F-A7B4BF2FD31B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CD4B235-5DCB-4350-BC4F-A7B4BF2FD31B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C143358F-3615-4D8C-A4E2-F46CA97B8DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C143358F-3615-4D8C-A4E2-F46CA97B8DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C143358F-3615-4D8C-A4E2-F46CA97B8DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C143358F-3615-4D8C-A4E2-F46CA97B8DBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C901971-620F-4B0F-B581-47902DE95E0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C901971-620F-4B0F-B581-47902DE95E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C901971-620F-4B0F-B581-47902DE95E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C901971-620F-4B0F-B581-47902DE95E0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +56,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6A50C563-DBCD-47E3-B6CF-0F32CFD29DAA} = {7BE5029B-C08C-45DC-8E56-1525BDF374F9}
 		{4A876FF8-1D57-4C4C-B7B5-1C494800ED1F} = {E8A57FF0-8E05-4556-B55D-7237A59D12AA}
+		{C143358F-3615-4D8C-A4E2-F46CA97B8DBC} = {E8A57FF0-8E05-4556-B55D-7237A59D12AA}
+		{8C901971-620F-4B0F-B581-47902DE95E0E} = {E8A57FF0-8E05-4556-B55D-7237A59D12AA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {78B57FE5-25C1-4C66-807E-D640D2827950}

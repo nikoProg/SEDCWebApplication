@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Customer>
+﻿@model IEnumerable<CustomerDTO>
 
 <h1>@ViewBag.Title</h1>
 
@@ -8,12 +8,13 @@
         @foreach (var customer in Model)
         {
 
-            <div class="card card-user">
-                <img class="card-img-top" src="~/img/avatar.png" alt="Card image" style="width:100%">
+            <div class="card card-user bg-dark">
+                <img class="card-img-top" src="@customer.ImagePath" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h4 class="card-title">@customer.Name</h4>
                     <p class="card-text">Customer Loyalty Points: 50</p>
                     <a asp-controller="customer" asp-action="details" asp-route-id="@customer.Id">See Profile</a>
+                    <a asp-controller="customer" asp-action="edit" asp-route-id="@customer.Id">Edit Profile</a>
                 </div>
             </div>
         }
