@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using SEDCWebAPI.Models.Repositories.Interfaces;
+using SEDCWebAPI.Repositories.Interfaces;
 using SEDCWebApplication.BLL.Logic.Models;
 using System;
 using System.Collections.Generic;
@@ -11,6 +13,9 @@ using System.Threading.Tasks;
 
 namespace SEDCWebAPI.Controllers
 {
+    //[EnableCors("CorsPolicy")]
+    //[Authorize]
+    //[AllowAnonymous]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductController : ControllerBase
@@ -25,6 +30,7 @@ namespace SEDCWebAPI.Controllers
         }
 
         // GET: api/<ProductController>
+        
         [HttpGet]
         public IEnumerable<ProductDTO> Get()
         {
@@ -62,9 +68,9 @@ namespace SEDCWebAPI.Controllers
 
         // DELETE api/<ProductController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ProductDTO Delete(int id)
         {
-           // _productRepository.Delete(_productRepository.GetById(id));
+            return _productRepository.Delete(_productRepository.GetProductById(id));
             
         }
     }

@@ -1,12 +1,12 @@
-C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.DatabaseFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.DatabaseFactory.csprojAssemblyReference.cache
-C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.DatabaseFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.DatabaseFactory.AssemblyInfoInputs.cache
-C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.DatabaseFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.DatabaseFactory.AssemblyInfo.cs
-C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.DatabaseFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.DatabaseFactory.csproj.CoreCompileInputs.cache
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.DatabaseFactory\bin\Debug\netcoreapp3.1\SEDCWebApplication.DAL.DatabaseFactory.deps.json
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.DatabaseFactory\bin\Debug\netcoreapp3.1\SEDCWebApplication.DAL.DatabaseFactory.runtimeconfig.json
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.DatabaseFactory\bin\Debug\netcoreapp3.1\SEDCWebApplication.DAL.DatabaseFactory.runtimeconfig.dev.json
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.DatabaseFactory\bin\Debug\netcoreapp3.1\SEDCWebApplication.DAL.DatabaseFactory.dll
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.DatabaseFactory\bin\Debug\netcoreapp3.1\SEDCWebApplication.DAL.DatabaseFactory.pdb
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.DatabaseFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.DatabaseFactory.AssemblyInfoInputs.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.DatabaseFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.DatabaseFactory.AssemblyInfo.cs
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.DatabaseFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.DatabaseFactory.csproj.CoreCompileInputs.cache
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.DatabaseFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.DatabaseFactory.dll
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.DatabaseFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.DatabaseFactory.pdb
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.DatabaseFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.DatabaseFactory.genruntimeconfig.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.DatabaseFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.DatabaseFactory.csprojAssemblyReference.cache

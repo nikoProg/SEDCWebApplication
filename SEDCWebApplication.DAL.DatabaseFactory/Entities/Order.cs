@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SEDCWebApplication.DAL.DatabaseFactory.Entities
 {
-    class Order
+    public class Order
     {
         public int Id { get; set; }
 
@@ -15,5 +15,9 @@ namespace SEDCWebApplication.DAL.DatabaseFactory.Entities
         public decimal TotalAmount { get; set; }
 
         public int Status { get; set; }
+
+        public Employee Employee { get; set; }
+
+        public List<OrderItem> OrderItems { get; set; }
     }
 }

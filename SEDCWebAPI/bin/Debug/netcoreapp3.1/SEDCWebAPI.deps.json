@@ -1601,7 +1601,8 @@
       "SEDCWebApplication.BLL.Logic/1.0.0": {
         "dependencies": {
           "AutoMapper": "10.1.1",
-          "SEDCWebApplication.DAL.Data": "1.0.0"
+          "SEDCWebApplication.DAL.Data": "1.0.0",
+          "SEDCWebApplication.DAL.DatabaseFactory": "1.0.0"
         },
         "runtime": {
           "SEDCWebApplication.BLL.Logic.dll": {}
@@ -1625,7 +1626,8 @@
       },
       "SEDCWebApplication.DAL.DatabaseFactory/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.9"
+          "Microsoft.EntityFrameworkCore": "5.0.9",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9"
         },
         "runtime": {
           "SEDCWebApplication.DAL.DatabaseFactory.dll": {}

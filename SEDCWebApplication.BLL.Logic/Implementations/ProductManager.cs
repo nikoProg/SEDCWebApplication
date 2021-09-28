@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using SEDCWebApplication.BLL.Logic.Interfaces;
 using SEDCWebApplication.BLL.Logic.Models;
-using SEDCWebApplication.DAL.Data.Entities;
-using SEDCWebApplication.DAL.Data.Interfaces;
+//using SEDCWebApplication.DAL.Data.Entities;
+//using SEDCWebApplication.DAL.Data.Interfaces;
+using SEDCWebApplication.DAL.DatabaseFactory.Entities;
+using SEDCWebApplication.DAL.DatabaseFactory.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -33,7 +35,7 @@ namespace SEDCWebApplication.BLL.Logic.Implementations
         public ProductDTO Update(ProductDTO product)
         {
             Product productEntity = _mapper.Map<Product>(product);
-            productEntity.EntityState = EntityStateEnum.Updated;
+            //productEntity.EntityState = EntityStateEnum.Updated;
             _productDAL.Save(productEntity); // bilo je update, ali sam vratio na private...
             product = _mapper.Map<ProductDTO>(productEntity);
 
@@ -47,21 +49,30 @@ namespace SEDCWebApplication.BLL.Logic.Implementations
 
         public ProductDTO GetProductById(int id)
         {
-            return _mapper.Map<ProductDTO>(_productDAL.GetById(id));
+            //_mapper.Map<ProductDTO>(_productDAL.GetById(id));
+            try
+            {
+                Product product = _productDAL.GetById(id);
+                if (product == null)
+                {
+                    throw new Exception($"Product with id {id} not found.");
+                }
+                ProductDTO productDTO = _mapper.Map<ProductDTO>(product);
+                return productDTO;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
-        public bool Delete(ProductDTO product)
+        public ProductDTO Delete(ProductDTO product)
         {
 
             Product productEntity = _mapper.Map<Product>(product);
             _productDAL.Delete(productEntity);
             product = _mapper.Map<ProductDTO>(productEntity);
-            return true;
-        }
-
-        ProductDTO IProductManager.Delete(ProductDTO product)
-        {
-            throw new NotImplementedException();
+            return product;
         }
     }
 }

@@ -131,6 +131,9 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+              "C:\\Users\\name\\source\\repos\\SEDCWebApplication\\SEDCWebApplication.DAL.DatabaseFactory\\SEDCWebApplication.DAL.DatabaseFactory.csproj": {
+                "projectPath": "C:\\Users\\name\\source\\repos\\SEDCWebApplication\\SEDCWebApplication.DAL.DatabaseFactory\\SEDCWebApplication.DAL.DatabaseFactory.csproj"
+              },
               "C:\\Users\\name\\source\\repos\\SEDCWebApplication\\SEDCWebApplication.DAL.Data\\SEDCWebApplication.DAL.Data.csproj": {
                 "projectPath": "C:\\Users\\name\\source\\repos\\SEDCWebApplication\\SEDCWebApplication.DAL.Data\\SEDCWebApplication.DAL.Data.csproj"
               }
@@ -208,6 +211,10 @@
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.9, )"
             },

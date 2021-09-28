@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 using SEDCWebApplication.BLL.Logic.Models;
 
-namespace SEDCWebAPI.Models.Repositories.Interfaces
+namespace SEDCWebAPI.Repositories.Interfaces
 {
     public interface IProductRepository
     {
@@ -15,6 +15,6 @@ namespace SEDCWebAPI.Models.Repositories.Interfaces
         //DTO je pozeljan, ali vise ne moze da nam radi mock.
         ProductDTO Update(ProductDTO product);
 
-        void Delete(ProductDTO product);
+        ProductDTO Delete(ProductDTO product);
     }
 }

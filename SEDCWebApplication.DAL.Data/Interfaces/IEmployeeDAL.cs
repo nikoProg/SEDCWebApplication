@@ -12,6 +12,7 @@ namespace SEDCWebApplication.DAL.Data.Interfaces
         Employee GetById(int id);
 
         List<Employee> GetAll(int skip, int take);
+        void Delete(Employee item);
 
 
         //void Update(Employee item);

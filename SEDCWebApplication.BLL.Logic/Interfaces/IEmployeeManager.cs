@@ -12,5 +12,7 @@ namespace SEDCWebApplication.BLL.Logic.Interfaces
         EmployeeDTO Add(EmployeeDTO employee);
 
         EmployeeDTO Update(EmployeeDTO employee);
+
+        //EmployeeDTO Delete(EmployeeDTO employee);
     }
 }

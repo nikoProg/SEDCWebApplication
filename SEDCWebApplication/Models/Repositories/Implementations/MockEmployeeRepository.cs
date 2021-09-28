@@ -20,7 +20,7 @@ namespace SEDCWebApplication.Models.Repositories.Implementations
                     Id=1,
                     Name="Pera",
                     Role=BLL.Logic.Models.RoleEnum.Manager,
-                    Test = true,
+                    //Test = true,
                     Email="test@sedcmail.com"
                 },
                 new EmployeeDTO
@@ -28,7 +28,7 @@ namespace SEDCWebApplication.Models.Repositories.Implementations
                     Id=2,
                     Name="Mika",
                     Role=RoleEnum.Sales,
-                    Test = false,
+                    //Test = false,
                     Email="test@sedcmail.com"
                 },
                 new EmployeeDTO

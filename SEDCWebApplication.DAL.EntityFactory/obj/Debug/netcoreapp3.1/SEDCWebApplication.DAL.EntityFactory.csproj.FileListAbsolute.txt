@@ -3,7 +3,6 @@ C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.EntityFacto
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.EntityFactory\bin\Debug\netcoreapp3.1\SEDCWebApplication.DAL.EntityFactory.runtimeconfig.dev.json
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.EntityFactory\bin\Debug\netcoreapp3.1\SEDCWebApplication.DAL.EntityFactory.dll
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.EntityFactory\bin\Debug\netcoreapp3.1\SEDCWebApplication.DAL.EntityFactory.pdb
-C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.EntityFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.EntityFactory.csprojAssemblyReference.cache
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.EntityFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.EntityFactory.AssemblyInfoInputs.cache
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.EntityFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.EntityFactory.AssemblyInfo.cs
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.EntityFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.EntityFactory.csproj.CoreCompileInputs.cache

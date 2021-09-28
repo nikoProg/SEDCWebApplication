@@ -8,13 +8,17 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using SEDCWebAPI.Models.Repositories.Implementations;
-using SEDCWebAPI.Models.Repositories.Interfaces;
+using SEDCWebAPI.Repositories.Implementations;
+using SEDCWebAPI.Repositories.Interfaces;
+using SEDCWebAPI.Services.Implementations;
+using SEDCWebAPI.Services.Interfaces;
 using SEDCWebApplication.BLL.Logic.Implementations;
 using SEDCWebApplication.BLL.Logic.Interfaces;
-using SEDCWebApplication.DAL.Data.Implementations;
-using SEDCWebApplication.DAL.Data.Interfaces;
+//using SEDCWebApplication.DAL.Data.Implementations;
+//using SEDCWebApplication.DAL.Data.Interfaces;
 using SEDCWebApplication.DAL.DatabaseFactory;
+using SEDCWebApplication.DAL.DatabaseFactory.Implementations;
+using SEDCWebApplication.DAL.DatabaseFactory.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,16 +38,41 @@ namespace SEDCWebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin();
+                        builder.AllowAnyHeader();
+                        builder.AllowAnyMethod();
+                    });
+            });
+
             services.AddControllers();
 
             services.AddAutoMapper(typeof(ProductManager));
 
             services.AddScoped<IProductRepository, DatabaseProductRepository>();
+            services.AddScoped<IEmployeeRepository, DatabaseEmployeeRepository>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IDataService, DataService>();
 
+            //BLL
+            services.AddScoped<IUserManager, UserManager>();
             services.AddScoped<IProductManager, ProductManager>();
+            services.AddScoped<IEmployeeManager, EmployeeManager>();
+            services.AddScoped<IOrderManager, OrderManager>();
 
-            services.AddScoped<IProductDAL, ProductDAL>();
+            //DAL
+            //direct database approach DAL.data
+            //services.AddScoped<IProductDAL, ProductDAL>();
 
+            //entity framework repositories, entityfactory, databasefactory
+            services.AddScoped<IUserDAL, UserRepository>();
+            services.AddScoped<IProductDAL, ProductRepository>();
+            services.AddScoped<IEmployeeDAL, EmployeeRepository>();
+            services.AddScoped<IOrderDAL, OrderRepository>();
 
             services.AddSwaggerGen(c =>
             {
@@ -52,7 +81,6 @@ namespace SEDCWebAPI
 
 
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SEDC2")));
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,9 +92,13 @@ namespace SEDCWebAPI
             }
 
             app.UseHttpsRedirection();
-
+            
             app.UseRouting();
+            
+            app.UseCors();
 
+
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -76,6 +108,7 @@ namespace SEDCWebAPI
 
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SEDC_WebAPI v1"));
+
         }
     }
 }

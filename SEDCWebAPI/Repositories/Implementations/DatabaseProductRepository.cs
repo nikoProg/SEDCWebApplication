@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SEDCWebAPI.Models.Repositories.Implementations
+namespace SEDCWebAPI.Repositories.Implementations
 {
     public class DatabaseProductRepository : Interfaces.IProductRepository
     {
@@ -34,9 +34,9 @@ namespace SEDCWebAPI.Models.Repositories.Implementations
             return _productManager.Update(product);
         }
 
-        public void Delete(ProductDTO product)
+        public ProductDTO Delete(ProductDTO product)
         {
-            //return _productManager.Delete(product);
+            return _productManager.Delete(product);
         }
     }
 }

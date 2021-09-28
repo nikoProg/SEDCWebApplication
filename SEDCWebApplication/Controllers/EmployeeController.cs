@@ -59,7 +59,7 @@ namespace SEDCWebApplication.Controllers
 
             EmployeeDetailsViewModel employeeVM = new EmployeeDetailsViewModel();
             employeeVM.EmployeeName = employee.Name;
-            employeeVM.Test = employee.Test;
+            //employeeVM.Test = employee.Test;
             //employeeVM.EmployeeCompany = employee.Company;
             employeeVM.PageTitle = "Employee's details";
             employeeVM.Email = employee.Email;

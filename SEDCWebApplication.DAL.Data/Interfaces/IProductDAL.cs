@@ -16,6 +16,6 @@ namespace SEDCWebApplication.DAL.Data.Interfaces
 
         //void Update(Product item);
 
-        bool Delete(Product item);
+        void Delete(Product item);
     }
 }

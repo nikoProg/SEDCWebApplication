@@ -33,7 +33,7 @@ namespace SEDCWebApplication.BLL.Logic.Implementations
         public CustomerDTO Update(CustomerDTO customer)
         {
             Customer customerEntity = _mapper.Map<Customer>(customer);
-            customerEntity.EntityState = EntityStateEnum.Updated;
+            //customerEntity.EntityState = EntityStateEnum.Updated;
             _customerDAL.Save(customerEntity); // bilo je update, ali sam vratio na private...
             customer = _mapper.Map<CustomerDTO>(customerEntity);
 

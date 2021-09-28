@@ -8,14 +8,11 @@ namespace SEDCWebApplication.DAL.DatabaseFactory.Entities
 {
     public class Product
     {
-        /*public Product(int? id)
-    : base(id)
-        {
-        }
-        */
-        [Required(ErrorMessage = "Ime je obavezno")]//OVO VEROVATNO NE TREBA UNUTAR DAL ENTITY!
-        public string Name { get; set; }
-        public float? UnitPrice { get; set; }
+        [Key]
+        public int Id { get; set; }
+
+        public string Name { get; set; }//zasto je sam odlucio da je name NOT NULL?!
+        public decimal UnitPrice { get; set; }
         public bool? IsDiscounted { get; set; }
         public bool? IsActive { get; set; }
         public bool? IsDeleted { get; set; }

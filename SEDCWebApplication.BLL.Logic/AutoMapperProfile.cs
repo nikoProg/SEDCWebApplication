@@ -1,6 +1,9 @@
 ﻿using AutoMapper;
+using SEDCWebApplication.BLL.Logic.Helpers;
 using SEDCWebApplication.BLL.Logic.Models;
-using SEDCWebApplication.DAL.Data.Entities;
+//using SEDCWebApplication.DAL.Data.Entities;
+//ovde je doslo do kriticne greske sa rename-ovanjem namespace-a, pazi se visual studio recommenations
+using SEDCWebApplication.DAL.DatabaseFactory.Entities;
 using System;
 
 namespace SEDCWebApplication.BLL.Logic
@@ -27,6 +30,11 @@ namespace SEDCWebApplication.BLL.Logic
             CreateMap<Product, ProductDTO>();
 
             CreateMap<ProductDTO, Product>();
+
+
+            CreateMap<DAL.DatabaseFactory.Entities.User, UserDTO>();
+            //.ForMember(dest => dest.Role, src => src.MapFrom(src => EnumHelper.GetString()))
+            //CreateMap<User, UserDTO>();
 
         }
     }

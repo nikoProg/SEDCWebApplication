@@ -207,6 +207,37 @@ namespace SEDCWebApplication.DAL.Data.Implementations
             return results;
         }
 
+        //da li treba void ili ne? Manager i ostali vracaju product(DTO)
+        //Delete ne brise nego samo stavlja IsDeleted = true, barem za product, koji ima taj prop!
+        public void Delete(Product item)
+        {
+            SqlConnection cn = ConnectionGet();
+
+            SqlCommand cmd = CommandGet(cn);
+            cmd.CommandText = "Product_Del";
+
+            SqlParameter prm = new SqlParameter();
+            prm.ParameterName = "@ID";
+            prm.SqlDbType = SqlDbType.Int;
+            prm.Value = item.Id.Value;
+            cmd.Parameters.Add(prm);
+
+            try
+            {
+                cn.Open();
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                //DMLogger.Singleton.LogError(ex, item);
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
 
         private void CommonParametersAdd(Product item, SqlCommand cmd)
         {
@@ -236,9 +267,5 @@ namespace SEDCWebApplication.DAL.Data.Implementations
             return item;
         }
 
-        public bool Delete(Product item)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

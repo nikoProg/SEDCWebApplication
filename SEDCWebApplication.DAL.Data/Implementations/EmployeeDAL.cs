@@ -234,5 +234,10 @@ namespace SEDCWebApplication.DAL.Data.Implementations
 
             return item;
         }
+
+        public void Delete(Employee item)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
