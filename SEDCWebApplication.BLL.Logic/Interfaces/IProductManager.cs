@@ -11,7 +11,7 @@ namespace SEDCWebApplication.BLL.Logic.Interfaces
         ProductDTO GetProductById(int id);
         ProductDTO Add(ProductDTO product);
 
-        ProductDTO Update(ProductDTO product);
+        ProductDTO Update(int id, ProductDTO product);
 
         ProductDTO Delete(ProductDTO product);
     }

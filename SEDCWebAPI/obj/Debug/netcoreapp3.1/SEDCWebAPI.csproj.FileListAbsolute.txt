@@ -91,3 +91,5 @@ C:\Users\name\source\repos\SEDCWebApplication\SEDCWebAPI\obj\Debug\netcoreapp3.1
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebAPI\obj\Debug\netcoreapp3.1\SEDCWebAPI.dll
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebAPI\obj\Debug\netcoreapp3.1\SEDCWebAPI.pdb
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebAPI\obj\Debug\netcoreapp3.1\SEDCWebAPI.genruntimeconfig.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebAPI\obj\Debug\netcoreapp3.1\SEDCWebAPI.MvcApplicationPartsAssemblyInfo.cs

@@ -1,4 +1,5 @@
-﻿using SEDCWebApplication.BLL.Logic.Interfaces;
+﻿using SEDCWebAPI.Repositories.Interfaces;
+using SEDCWebApplication.BLL.Logic.Interfaces;
 using SEDCWebApplication.BLL.Logic.Models;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SEDCWebAPI.Repositories.Implementations
 {
-    public class DatabaseEmployeeRepository : Interfaces.IEmployeeRepository
+    public class DatabaseEmployeeRepository : IEmployeeRepository
     {
         private readonly IEmployeeManager _employeeManager;
         public DatabaseEmployeeRepository(IEmployeeManager employeeManager)

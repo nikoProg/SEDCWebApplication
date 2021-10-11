@@ -126,6 +126,9 @@ namespace SEDCWebApplication.DAL.DatabaseFactory.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
                     b.Property<string>("UserName")
                         .HasColumnType("nvarchar(max)");
 
@@ -165,9 +168,6 @@ namespace SEDCWebApplication.DAL.DatabaseFactory.Migrations
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("RoleId")
-                        .HasColumnType("int");
 
                     b.HasDiscriminator().HasValue("Employee");
                 });

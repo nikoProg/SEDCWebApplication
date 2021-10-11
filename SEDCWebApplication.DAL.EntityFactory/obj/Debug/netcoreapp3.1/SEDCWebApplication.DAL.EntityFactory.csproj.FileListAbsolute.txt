@@ -9,3 +9,4 @@ C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.EntityFacto
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.EntityFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.EntityFactory.dll
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.EntityFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.EntityFactory.pdb
 C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.EntityFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.EntityFactory.genruntimeconfig.cache
+C:\Users\name\source\repos\SEDCWebApplication\SEDCWebApplication.DAL.EntityFactory\obj\Debug\netcoreapp3.1\SEDCWebApplication.DAL.EntityFactory.csprojAssemblyReference.cache

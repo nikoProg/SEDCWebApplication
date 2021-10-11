@@ -13,7 +13,7 @@ namespace SEDCWebAPI.Repositories.Interfaces
         ProductDTO GetProductById(int id);
         ProductDTO Add(ProductDTO product);
         //DTO je pozeljan, ali vise ne moze da nam radi mock.
-        ProductDTO Update(ProductDTO product);
+        ProductDTO Update(int id, ProductDTO product);
 
         ProductDTO Delete(ProductDTO product);
     }

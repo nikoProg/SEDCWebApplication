@@ -8,5 +8,9 @@ namespace SEDCWebApplication.BLL.Logic.Interfaces
     public interface IOrderManager
     {
         OrderDTO Add(OrderDTO order);
+
+        IEnumerable<OrderDTO> GetAllOrders();
+
+        OrderDTO GetOrderById(int id);
     }
 }

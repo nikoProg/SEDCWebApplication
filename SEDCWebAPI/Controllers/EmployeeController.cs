@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace SEDCWebAPI.Controllers
 {
-    //[EnableCors("CorsPolicy")]
+    [EnableCors("CorsPolicy")]
     [Route("api/[controller]")]
     [ApiController]
     public class EmployeeController : ControllerBase
@@ -29,16 +29,17 @@ namespace SEDCWebAPI.Controllers
 
         // GET: api/<ValuesController>
         [HttpGet]
-        public IEnumerable<EmployeeDTO> Get()
+        public ActionResult<IEnumerable<EmployeeDTO>> Get()
         {
-            return _employeeRepository.GetAllEmployees();
+            return Ok(_employeeRepository.GetAllEmployees());
         }
 
         // GET api/<ValuesController>/5
         [HttpGet("{id}")]
-        public EmployeeDTO Get(int id)
+        public ActionResult<EmployeeDTO> Get(int id)
         {
-            return _employeeRepository.GetEmployeeById(id);
+            EmployeeDTO employee = _employeeRepository.GetEmployeeById(id);
+            return Ok(employee);
         }
 
         // POST api/<ValuesController>

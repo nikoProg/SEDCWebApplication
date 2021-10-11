@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using SEDCWebAPI.Services.Interfaces;
@@ -11,6 +12,7 @@ using SEDCWebApplication.BLL.Logic.Models;
 
 namespace SEDCWebAPI.Controllers
 {
+    [EnableCors("CorsPolicy")]
     [Route("api/[controller]")]
     [ApiController]
     public class OrderController : ControllerBase
@@ -21,22 +23,22 @@ namespace SEDCWebAPI.Controllers
 
         public OrderController(IDataService dataService, IWebHostEnvironment hostingEnvironment)
         {
-            _dataService = dataService;
+            _dataService = dataService;  // umesto orderRepository
             _hostingEnvironment = hostingEnvironment;
         }
 
         // GET: api/<OrderController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public ActionResult<IEnumerable<OrderDTO>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return Ok(_dataService.GetAllOrders());
         }
 
         // GET api/<OrderController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ActionResult<OrderDTO> Get(int id)
         {
-            return "value";
+            return Ok(_dataService.GetOrderById(id));
         }
 
         // POST api/<OrderController>

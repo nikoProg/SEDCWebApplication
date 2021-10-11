@@ -32,16 +32,16 @@ namespace SEDCWebAPI.Controllers
         // GET: api/<ProductController>
         
         [HttpGet]
-        public IEnumerable<ProductDTO> Get()
+        public ActionResult<IEnumerable<ProductDTO>> Get()
         {
-            return _productRepository.GetAllProducts();
+            return Ok(_productRepository.GetAllProducts());
         }
 
         // GET api/<ProductController>/5
         [HttpGet("{id}")]
-        public ProductDTO Get(int id)
+        public ActionResult<ProductDTO> Get(int id)
         {
-            return _productRepository.GetProductById(id);
+            return Ok(_productRepository.GetProductById(id));
         }
 
         // POST api/<ProductController>
@@ -55,6 +55,8 @@ namespace SEDCWebAPI.Controllers
                 UnitPrice = newProduct.UnitPrice,
                 Description = newProduct.Description,
                 IsDiscounted = newProduct.IsDiscounted,
+                IsActive = newProduct.IsActive,
+                IsDeleted = newProduct.IsDeleted,
                 ImagePath = newProduct.ImagePath
             };
             return _productRepository.Add(product);
@@ -62,15 +64,27 @@ namespace SEDCWebAPI.Controllers
 
         // PUT api/<ProductController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public ProductDTO Put(int id, [FromBody] ProductDTO newProduct)
         {
+            ProductDTO product = new ProductDTO
+            {
+                Name = newProduct.Name,
+                Size = newProduct.Size,
+                UnitPrice = newProduct.UnitPrice,
+                Description = newProduct.Description,
+                IsDiscounted = newProduct.IsDiscounted,
+                IsActive = newProduct.IsActive,
+                IsDeleted = newProduct.IsDeleted,
+                ImagePath = newProduct.ImagePath
+            };
+            return _productRepository.Update(id, product);//update ili edit?
         }
 
         // DELETE api/<ProductController>/5
         [HttpDelete("{id}")]
-        public ProductDTO Delete(int id)
+        public ActionResult<ProductDTO> Delete(int id)
         {
-            return _productRepository.Delete(_productRepository.GetProductById(id));
+            return Ok(_productRepository.Delete(_productRepository.GetProductById(id)));
             
         }
     }

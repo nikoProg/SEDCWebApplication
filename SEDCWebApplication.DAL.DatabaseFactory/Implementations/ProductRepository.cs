@@ -56,6 +56,17 @@ namespace SEDCWebApplication.DAL.DatabaseFactory.Implementations
             }
         }
 
+        public void Update(Product item)
+        {
+            var optionBuilder = new DbContextOptionsBuilder<ApplicationDbContext>().UseSqlServer(Configuration.GetConnectionString("SEDC2"));
+            using (var db = new ApplicationDbContext(optionBuilder.Options))
+            {
+                //Product product = new Product();
+                db.Update(item);
+                db.SaveChanges();
+            }
+        }
+
         public void Delete(Product item)
         {
             var optionBuilder = new DbContextOptionsBuilder<ApplicationDbContext>().UseSqlServer(Configuration.GetConnectionString("SEDC2"));

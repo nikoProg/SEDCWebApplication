@@ -24,10 +24,10 @@ namespace SEDCWebApplication.BLL.Logic.Implementations
             try
             {
                 User user = _userDAL.GetUserByUserNameAndPassword(username, password);
-                if (user == null)
+                /*if (user == null)
                 {
                     throw new Exception($"User {username} not found, or password incorrect");
-                }
+                }*/
                 UserDTO userDTO = _mapper.Map<UserDTO>(user);
                 return userDTO;
             }

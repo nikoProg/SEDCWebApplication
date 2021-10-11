@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Mnksavql3ZLAuc6VFsgOyg+mwV63TEp8pyZpEcH8z8H7lskQ0j5oCN9Lfxb25QaNqjhAzLylkO4u6OSf9zbi4Q==",
+  "dgSpecHash": "WoAaiwZxLdJTBUvSAv81cujGlzW7iUNv2zFMn5aZ+MAxWx5Y36CSKCKi9fCPufVixYo0X8AWPkEULOMrZUXmtg==",
   "success": true,
   "projectFilePath": "C:\\Users\\name\\source\\repos\\SEDCWebApplication\\SEDCWebAPI\\SEDCWebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\name\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\name\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\name\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\name\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.19\\microsoft.aspnetcore.authentication.jwtbearer.3.1.19.nupkg.sha512",
     "C:\\Users\\name\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.18\\microsoft.aspnetcore.jsonpatch.3.1.18.nupkg.sha512",
     "C:\\Users\\name\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.18\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.18.nupkg.sha512",
     "C:\\Users\\name\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -32,11 +32,11 @@ namespace SEDCWebApplication.BLL.Logic.Implementations
             product = _mapper.Map<ProductDTO>(productEntity);
             return product;
         }
-        public ProductDTO Update(ProductDTO product)
+        public ProductDTO Update(int id, ProductDTO product)
         {
             Product productEntity = _mapper.Map<Product>(product);
             //productEntity.EntityState = EntityStateEnum.Updated;
-            _productDAL.Save(productEntity); // bilo je update, ali sam vratio na private...
+            _productDAL.Update(productEntity); // bilo je update, ali sam vratio na private...
             product = _mapper.Map<ProductDTO>(productEntity);
 
             return product;

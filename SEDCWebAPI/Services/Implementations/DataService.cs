@@ -44,5 +44,25 @@ namespace SEDCWebAPI.Services.Implementations
         {
             return _employeeManager.Add(employee);
         }
+
+        public IEnumerable<OrderDTO> GetAllOrders()
+        {
+            return _orderManager.GetAllOrders();
+        }
+
+        public OrderDTO GetOrderById(int id)
+        {
+            try
+            {
+                return _orderManager.GetOrderById(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+
     }
 }

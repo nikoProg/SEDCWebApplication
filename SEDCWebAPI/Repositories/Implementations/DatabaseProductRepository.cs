@@ -29,9 +29,9 @@ namespace SEDCWebAPI.Repositories.Implementations
         {
             return _productManager.Add(product);
         }
-        public ProductDTO Update(ProductDTO product)
+        public ProductDTO Update(int id, ProductDTO product)
         {
-            return _productManager.Update(product);
+            return _productManager.Update(id, product);
         }
 
         public ProductDTO Delete(ProductDTO product)

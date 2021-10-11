@@ -13,6 +13,8 @@ namespace SEDCWebApplication.DAL.DatabaseFactory.Interfaces
 
         List<Product> GetAll(int skip, int take);
 
+        void Update(Product item);
+
         void Delete(Product item);//mozda tip moze biti Product?
     }
 }

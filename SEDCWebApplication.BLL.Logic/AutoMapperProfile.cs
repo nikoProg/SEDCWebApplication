@@ -18,8 +18,8 @@ namespace SEDCWebApplication.BLL.Logic
                     .ForMember(dest => dest.Email, src => src.MapFrom(src => src.UserName));
 
             CreateMap<EmployeeDTO, Employee>()
-                .ForMember(dest => dest.UserName, src => src.MapFrom(src => src.Email))
-                    .ForMember(dest => dest.RoleId, src => src.MapFrom(src => src.Role));
+                .ForMember(dest => dest.UserName, src => src.MapFrom(src => src.Email));
+                    //.ForMember(dest => dest.RoleId, src => src.MapFrom(src => src.Role));
 
             CreateMap<Customer, CustomerDTO>()
                 .ForMember(dest => dest.Email, src => src.MapFrom(src => src.UserName));
@@ -32,10 +32,14 @@ namespace SEDCWebApplication.BLL.Logic
             CreateMap<ProductDTO, Product>();
 
 
-            CreateMap<DAL.DatabaseFactory.Entities.User, UserDTO>();
-            //.ForMember(dest => dest.Role, src => src.MapFrom(src => EnumHelper.GetString()))
+            CreateMap<DAL.DatabaseFactory.Entities.User, UserDTO>()
+                .ForMember(dest => dest.Role, src => src.MapFrom(src => EnumHelper.GetString<RoleEnum>(src.RoleId)));
             //CreateMap<User, UserDTO>();
 
+
+            CreateMap<OrderDTO, Order>();
+
+            CreateMap<Order, OrderDTO>();
         }
     }
 }

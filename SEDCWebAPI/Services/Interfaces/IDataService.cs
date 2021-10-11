@@ -13,5 +13,10 @@ namespace SEDCWebAPI.Services.Interfaces
         IEnumerable<EmployeeDTO> GetAllEmployees();
         EmployeeDTO GetEmployeeById(int id);
         EmployeeDTO AddEmployee(EmployeeDTO employee);
+
+
+        public IEnumerable<OrderDTO> GetAllOrders();
+
+        OrderDTO GetOrderById(int id);
     }
 }

@@ -27,6 +27,7 @@ namespace SEDCWebApplication.BLL.Logic.Implementations
             Order order = new Order();
             order.TotalAmount = 0;
             order.Number = CreateOrderNumber();
+            order.Date = DateTime.Now;
             order.Status = 1;
             order.OrderItems = new List<OrderItem>();
 
@@ -58,5 +59,30 @@ namespace SEDCWebApplication.BLL.Logic.Implementations
         {
             return "N";
         }
+
+        public IEnumerable<OrderDTO> GetAllOrders()
+        {
+            return _mapper.Map<List<OrderDTO>>(_orderDAL.GetAll(0, 50));
+        }
+
+        public OrderDTO GetOrderById(int id)
+        {
+            //_mapper.Map<OrderDTO>(_orderDAL.GetById(id));
+            try
+            {
+                Order order = _orderDAL.GetById(id);
+                if (order == null)
+                {
+                    throw new Exception($"Order with id {id} not found.");
+                }
+                OrderDTO orderDTO = _mapper.Map<OrderDTO>(order);
+                return orderDTO;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }

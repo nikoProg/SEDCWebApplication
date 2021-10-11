@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.Extensions.Configuration;
 using SEDCWebApplication.BLL.Logic.Interfaces;
 using SEDCWebApplication.BLL.Logic.Models;
 //using SEDCWebApplication.DAL.Data.Entities;
@@ -15,6 +16,9 @@ namespace SEDCWebApplication.BLL.Logic.Implementations
     {
         private readonly IEmployeeDAL _employeeDAL;
         private readonly IMapper _mapper;
+        //ne znam tacno gde koristimo konfiguraciju, a ni order, mada order bi trebao da jeste deo entiteta employee
+        private readonly IOrderDAL _orderDAL;
+        private readonly IConfiguration _configuration;
         public EmployeeManager(IEmployeeDAL employeeDAL, IMapper mapper)
         {
             _employeeDAL = employeeDAL;
